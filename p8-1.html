@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Event handling</title>
+    <script type="text/javascript">
+        function over(element){
+            element.style.color="red";
+        }
+
+        function out(element){
+            element.style.color="black";
+        }
+    </script>
+    <style type="text/css">
+        
+    </style>
+    
+</head>
+    <body>
+        <button onclick="alert('Clicked');">Click</button>
+
+        <!-- this represents span -->
+        <span onmouseover="over(this);"  
+            onmouseout="out(this);">Test
+        </span>
+
+        <!-- this represents div -->
+        <div onmouseover="over(this);"  
+            onmouseout="out(this);">Line
+        </div>
+
+    </body>
+</html>

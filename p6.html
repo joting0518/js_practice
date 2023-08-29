@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Html dom</title>
+    <script type="text/javascript">
+    /* it is dom! Javascript 物件結構
+                            window
+            ------------------------------------
+            history        document       screen
+            ------------------------------------
+                             body
+            ------------------------------------
+                      h3               div
+            ------------------------------------
+                                span         span
+    */
+        function change(){
+            var spanObj = window.document.getElementById("emotion");
+            spanObj.innerHTML = "bad";//modify context
+            spanObj.style.color = "red";//css
+            spanObj.style.fontWeight = "bold";
+            spanObj.style.display = "none";
+        }
+
+    </script>
+    
+</head>
+    <body>
+        <div>
+            Today is a <span id="emotion">good</span> day.
+        </div>
+        <button onclick="change();">Change</button>
+    </body>
+</html>

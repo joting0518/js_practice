@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Html dom</title>
+    <script type="text/javascript">
+    /* it is dom!
+                            window
+            ------------------------------------
+            history        document       screen
+            ------------------------------------
+                             body
+            ------------------------------------
+                      h3               div
+            ------------------------------------
+                                span         span
+    */
+        alert(window.screen.width+"x"+window.screen.height);
+        function change(){
+            window.document.body.innerHTML="Hello world";
+        }
+
+    </script>
+    
+</head>
+    <body>
+        <button onclick="change();">Change</button>
+    </body>
+</html>

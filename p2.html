@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Javascript</title>
+    <script type="text/javascript">
+        //default function
+        alert("hello world");
+    
+        //make a function
+        function test(){
+            //function itself
+            alert("hi");
+        }
+
+        //call function
+        test();
+
+        //ex
+        function call(message){
+            alert(message);
+        }
+        call("java");
+
+        //函式的變形，函式是一種資料
+        var add=function(n1,n2){
+            alert(n1+n2);
+        };
+        add(10,20);
+        //把add函式給到tt
+        var tt = add;
+        tt(10,20)
+
+        //function create new namespace
+        var x = 3;//第一個x
+        function try1(){
+            var x = 5;//第二個x
+            alert(x);
+        }
+
+        alert(x);
+        
+    </script>
+</head>
+</html>

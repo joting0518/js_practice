@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Event handling</title>
+    <script type="text/javascript">
+    //用javascript的程式，動態的註冊事件處理器
+    function init(){
+        var btn = document.getElementById("btn");
+        btn.onclick=function(){
+            alert("Clicked!")
+        }
+    }
+    </script>
+   
+    
+</head>
+    <body onload="init();"> <!-- 確認body內容載入後，啟動init() -->
+        <button id="btn">Click</button>
+        
+    </body>
+</html>
